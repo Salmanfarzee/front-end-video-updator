@@ -2,6 +2,8 @@ import axios from "axios";
 import { enqueueSnackbar } from "notistack";
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import Footer from "../Footer/Footer";
+import Header from "../Header/Header";
 
 const UserLogin: React.FC = () => {
   const navigate = useNavigate();
@@ -41,6 +43,9 @@ const UserLogin: React.FC = () => {
   };
 
   return (
+    <div>
+
+   <Header/>
     <div className="container d-flex justify-content-center align-items-center vh-100 bg-light">
       <div className="card p-4 shadow-lg" style={{ width: "100%", maxWidth: "400px" }}>
         <h2 className="text-center mb-4">User Login</h2>
@@ -92,6 +97,8 @@ const UserLogin: React.FC = () => {
         </form>
         {error && <div className="text-danger mt-2">{error}</div>}
       </div>
+    </div>
+    <Footer/>
     </div>
   );
 };
