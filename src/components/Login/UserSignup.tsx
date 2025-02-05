@@ -260,7 +260,7 @@ const UserSignup: React.FC = () => {
               className="btn btn-primary w-100"
               disabled={loading} // Disable button when loading
             >
-              {loading ? "Signing up..." : "Signup"}
+              {loading ? "Signing up..." : " User Signup"}
             </button>
           </form>
         </div>

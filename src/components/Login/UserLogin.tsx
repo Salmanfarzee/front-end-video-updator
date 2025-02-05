@@ -84,7 +84,7 @@ const UserLogin: React.FC = () => {
             />
           </div>
           <button type="submit" className="btn mb-2 btn-primary w-100">
-            Login
+            User Login
           </button>
           <a
             className="cursor-pointer"
